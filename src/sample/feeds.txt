@@ -1,0 +1,4 @@
+https://daringfireball.net/feeds/main
+https://feedpress.me/sixcolors-direct
+http://feedpress.me/512pixels
+https://www.macstories.net/feed/
