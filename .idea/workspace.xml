@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="second commit" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jdom2_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/rome_1_5_0_t.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Testing/SpotifyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/google_api_java_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/google_http_client_1_33_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jdom2_2_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/rome_1_12_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/rome_1_12_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/rome_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/rome_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/rome_utils_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/rome_utils_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_7_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_7_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSE260Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CSE260Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/tasks.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

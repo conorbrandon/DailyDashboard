@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="slf4j-simple-1.7.9">
+  <library name="rome-1.5.0-t">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/slf4j-simple-1.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/rome-1.5.0-t.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="packages">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rome-1.5.0-t.jar!/" />
+      <root url="jar://$PROJECT_DIR$/rome-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/rome-1.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/rome-utils-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/slf4j-api-1.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/slf4j-simple-1.7.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

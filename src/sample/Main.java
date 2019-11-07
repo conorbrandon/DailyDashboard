@@ -148,7 +148,7 @@ public class Main extends Application {
     private HBox taskWindow = new HBox();
     private Stage newTaskStage = new Stage();
 
-    private Border blackBorder = new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(3, 3, 3, 3)));
+    private Border blackBorder = new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, new CornerRadii(3), new BorderWidths(3, 3, 3, 3)));
     private Insets inset10 = new Insets(10, 10, 10, 10);
     private Insets inset15 = new Insets(15, 15, 15, 15);
 
@@ -296,7 +296,7 @@ public class Main extends Application {
         calendar.setPadding(inset10);
         tasks.setPadding(inset10);
         rss.setPadding(inset10);
-        scrollRSS.setPadding(new Insets(3, 3, 3, 3));
+        //scrollRSS.setPadding(new Insets(3, 3, 3, 3));
         spotify.setPadding(inset10);
         settingsBox.setPadding(inset10);
         settingsNames.setPadding(inset10);
@@ -316,6 +316,7 @@ public class Main extends Application {
         settings.setSpacing(30);
         settingsNames.setSpacing(12);
         weatherForecast.setSpacing(10);
+        weather.setSpacing(10);
         level1.setSpacing(30);
         level2.setSpacing(30);
         level3.setSpacing(30);
@@ -399,37 +400,47 @@ public class Main extends Application {
         // Setting borders for each pane
         Border blueBorder = new Border(new BorderStroke
                 (Color.BLUE, BorderStrokeStyle.SOLID,
-                        CornerRadii.EMPTY,
+                        new CornerRadii(10),
                         new BorderWidths(3, 3, 3, 3)));
         Border redBorder = new Border(new BorderStroke
                 (Color.RED, BorderStrokeStyle.SOLID,
-                        CornerRadii.EMPTY,
+                        new CornerRadii(10),
                         new BorderWidths(3, 3, 3, 3)));
         Border orangeBorder = new Border(new BorderStroke
                 (Color.ORANGE, BorderStrokeStyle.SOLID,
-                        CornerRadii.EMPTY,
+                        new CornerRadii(10),
                         new BorderWidths(3, 3, 3, 3)));
         Border grayBorder = new Border(new BorderStroke
                 (Color.GRAY, BorderStrokeStyle.SOLID,
-                        CornerRadii.EMPTY,
+                        new CornerRadii(10),
                         new BorderWidths(3, 3, 3, 3)));
         Border greenBorder = new Border(new BorderStroke
                 (Color.GREEN, BorderStrokeStyle.SOLID,
-                        CornerRadii.EMPTY,
+                        new CornerRadii(10),
                         new BorderWidths(3, 3, 3, 3)));
+
+        // Setting background of each pane
+        root.setStyle("-fx-background-color: #f0f0f0;");
+        weather.setStyle("-fx-background-color: lightblue; " +
+                "-fx-background-radius: 10 10 10 10");
+        calendar.setStyle("-fx-background-color: #ff8282;" +
+                "-fx-background-radius: 10 10 10 10");
+        tasks.setStyle("-fx-background-color: #ffb882;" +
+                "-fx-background-radius: 10 10 10 10");
+        scrollTasks.setStyle("-fx-background-color: #ffb882;" +
+                "-fx-background-radius: 10 10 10 10");
+        rss.setStyle("-fx-background-color: lightgray;" +
+                "-fx-background-radius: 10 10 10 10");
+        scrollRSS.setStyle("-fx-background-color: lightgray;" +
+                "-fx-background-radius: 10 10 10 10");
+        spotify.setStyle("-fx-background-color: lightgreen;" +
+                "-fx-background-radius: 10 10 10 10");
+
         weather.setBorder(blueBorder);
         calendar.setBorder(redBorder);
         tasks.setBorder(orangeBorder);
         scrollRSS.setBorder(grayBorder);
         spotify.setBorder(greenBorder);
-        // Setting background of each pane
-        root.setStyle("-fx-background-color: #f0f0f0;");
-        weather.setStyle("-fx-background-color: lightblue;");
-        calendar.setStyle("-fx-background-color: #ff8282;");
-        tasks.setStyle("-fx-background-color: #ffb882;");
-        rss.setStyle("-fx-background-color: lightgray;");
-        scrollRSS.setStyle("-fx-background-color: lightgray;");
-        spotify.setStyle("-fx-background-color: lightgreen;");
     }
     private void settingsFeature() {
         settingsButton.setOnAction(event -> {
@@ -585,7 +596,8 @@ public class Main extends Application {
                 }
                 GetPlanner.tasksArrayList.remove(current);
                 GetPlanner.tasksList.remove(current);
-                redrawTasks();
+                //redrawTasks();
+
             });
         }
 
@@ -616,15 +628,17 @@ public class Main extends Application {
             label.setMaxSize(110, 160);
             label.setBorder(blackBorder);
             label.setPadding(inset10);
-            label.setStyle("-fx-background-color: white;");
+            label.setStyle("-fx-background-color: white;" +
+                    "-fx-background-radius: 10 10 10 10");
             label.setMinHeight(160);
             label.setMinWidth(110);
             // Button settings
             button.setMinSize(110, 30);
             button.setMaxSize(110, 30);
-            button.setText("Open article...");
+            button.setText("Open article");
             // VBox settings
             vBox.getChildren().addAll(label, button);
+            //vBox.getChildren().addAll(label);
             level2.getChildren().add(vBox);
             counter++;
         }
@@ -807,6 +821,7 @@ public class Main extends Application {
                 GetPlanner.updateFile();
             });
         }
+        System.out.println("Tasks List: " + tasksList.getChildren().toString());
         GetPlanner.updateFile();
     }
     public void initialize() {

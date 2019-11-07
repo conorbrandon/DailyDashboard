@@ -1,4 +1,3 @@
-Walk Dog 2
-Play Tennis 1
-Do Homework 1
-Class Registration 3
+Fix Bugs 1
+Do Homework 2
+Squash Bugs 8
