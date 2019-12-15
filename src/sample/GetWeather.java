@@ -43,7 +43,7 @@ public class GetWeather {
         weatherInfo = new ArrayList<>(5);
 
         try {
-            Scanner scanner = new Scanner(new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/settings.txt"));
+            Scanner scanner = new Scanner(new File("src/sample/settings.txt"));
             weatherKey = scanner.nextLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -222,7 +222,10 @@ public class GetWeather {
             StringBuilder string = new StringBuilder(15);
             string.append("High: " + array[1] + ", Low: " + array[2]
             + "; " + array[0]);
-            weatherInfo.add(string.toString());
+            String s = string.toString();
+            s= s.replaceAll("\"temperatureHighTime\":\\d*,\"temperatureLow\":\\d*,","");
+            System.out.println(s);
+            weatherInfo.add(s);
         }
     }
 }

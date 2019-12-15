@@ -21,6 +21,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -108,7 +109,13 @@ public class Main extends Application {
     private static ArrayList<Button> newsButtons = new ArrayList<>();
 
     private VBox rss = new VBox();
-    private VBox spotify = new VBox();
+
+    // Spotify
+    private HBox spotify = new HBox();
+    private VBox spotifyA = new VBox();
+    private VBox spotImagesA = new VBox();
+    private VBox spotifyB = new VBox();
+    private VBox spotImagesB = new VBox();
 
     // Settings panes
     private Button settingsButton = new Button("Settings...");
@@ -197,7 +204,7 @@ public class Main extends Application {
                     calendar.setMinWidth(390);
                     scrollTasks.setMinWidth(390);
                     rss.setMinWidth(590);
-                    spotify.setMinWidth(590);
+                    spotify.setMinWidth(700);
                 }
             }
         });
@@ -241,6 +248,7 @@ public class Main extends Application {
         level1.getChildren().addAll(weather, calendar, scrollTasks);
         // News
         setUpNewsNodes();
+        spotify.getChildren().addAll(spotImagesB, spotifyB, spotImagesA, spotifyA);
         level3.getChildren().addAll(scrollRSS, spotify);
         weather.getChildren().addAll(weatherPicHiLo, weatherForecast);
         tasks.getChildren().addAll(tasksChecks, tasksList);
@@ -287,7 +295,7 @@ public class Main extends Application {
     }
     private void setPadding() {
         // Setting Padding for each pane
-        Insets inset40 = new Insets(40, 40, 40, 40);
+        Insets inset40 = new Insets(10, 30, 30, 30);
         root.setPadding(inset15);
         level1.setPadding(inset10);
         level2.setPadding(inset10);
@@ -297,7 +305,11 @@ public class Main extends Application {
         tasks.setPadding(inset10);
         rss.setPadding(inset10);
         //scrollRSS.setPadding(new Insets(3, 3, 3, 3));
-        spotify.setPadding(inset10);
+        spotifyA.setPadding(inset10);
+        spotImagesA.setPadding(inset40);
+        spotifyB.setPadding(inset10);
+        spotImagesB.setPadding(inset40);
+
         settingsBox.setPadding(inset10);
         settingsNames.setPadding(inset10);
         settingsFields.setPadding(inset10);
@@ -310,6 +322,7 @@ public class Main extends Application {
         level3.setAlignment(Pos.CENTER);
         settingsBox.setAlignment(Pos.CENTER);
         level0.setAlignment(Pos.CENTER);
+        spotify.setAlignment(Pos.CENTER);
     }
     private void setSpacing() {
         // Setting spacing for each pane
@@ -322,6 +335,8 @@ public class Main extends Application {
         level3.setSpacing(30);
         taskLabels.setSpacing(10);
         rss.setSpacing(10);
+        spotifyA.setSpacing(4);
+        spotifyB.setSpacing(4);
     }
     private void setSizesOfNodes() {
         // Setting min and max sizes of things
@@ -330,7 +345,7 @@ public class Main extends Application {
         calendar.setMinWidth(390);
         scrollTasks.setMinWidth(390);
         rss.setMinWidth(590);
-        spotify.setMinWidth(590);
+        spotify.setMinWidth(700);
         level2.setMinHeight(250);
         level1.setMaxHeight(350);
         level2.setMaxHeight(150);
@@ -358,7 +373,7 @@ public class Main extends Application {
     }
     private boolean emptySettingsFile() {
         boolean emptyFile = false;
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/firstOpen.txt");
+        File file = new File("src/sample/firstOpen.txt");
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
@@ -378,7 +393,7 @@ public class Main extends Application {
         return emptyFile;
     }
     private void setSettingsNull() {
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/settings.txt");
+        File file = new File("src/sample/settings.txt");
         try {
             Scanner scanner = new Scanner(file);
             int i = 0;
@@ -485,7 +500,10 @@ public class Main extends Application {
             GetRSS.main(burner);
             GetSpotify.main(burner);
             calendar.getChildren().clear();
-            spotify.getChildren().clear();
+            spotifyA.getChildren().clear();
+            spotifyB.getChildren().clear();
+            spotImagesA.getChildren().clear();
+            spotImagesB.getChildren().clear();
             weatherFeature();
             calendarFeature();
             rssFeature();
@@ -493,7 +511,7 @@ public class Main extends Application {
         });
     }
     private void updateSettingsFile(String weather, String cal, String rss, String spot) {
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/settings.txt");
+        File file = new File("src/sample/settings.txt");
         if(!weather.equals("")) arraySettings[WEATHER] = weather;
         if(!cal.equals("")) arraySettings[CALENDAR] = cal;
         if(!rss.equals("")) arraySettings[RSS] = rss;
@@ -559,6 +577,18 @@ public class Main extends Application {
             Label label = new Label(s);
             label.setPadding(new Insets(10, 10, 10, 10));
             label.setWrapText(true);
+            label.setOnMouseClicked(event -> {
+                int n = calendar.getChildren().indexOf(label);
+                String link = GetCalendar.calendarLinks.get(n);
+                System.out.println(link);
+                try {
+                    URI uri = new URI(link);
+                    Desktop desktop = Desktop.getDesktop();
+                    desktop.browse(uri);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
             calendar.getChildren().add(label);
         }
     }
@@ -772,6 +802,7 @@ public class Main extends Application {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                stuff.setStyle("-fx-text-fill: white;");
             });
         }
         System.out.println("RSS Feature: " + rss.getChildren().toString());
@@ -779,11 +810,43 @@ public class Main extends Application {
     }
     private void spotifyFeature() {
         // Adding Spotify info to panes
+        int counter = -1;
         for (String s : GetSpotify.playlistList) {
+            counter++;
             Label label = new Label(s);
             label.setStyle("-fx-underline: true;");
             label.setPadding(new Insets(10, 10, 10, 10));
-            spotify.getChildren().add(label);
+            label.setOnMouseClicked(event -> {
+                int n = GetSpotify.playlistList.indexOf(label.getText());
+                String link = GetSpotify.linksList.get(n);
+                System.out.println(link);
+                try {
+                    URI uri = new URI(link);
+                    Desktop desktop = Desktop.getDesktop();
+                    desktop.browse(uri);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
+            if (counter < 7) {
+                spotifyB.getChildren().add(label);
+                WebView webView = new WebView();
+                webView.getEngine().load(GetSpotify.imagesList.get(counter));
+                webView.setMinSize(40, 40);
+                webView.setMaxSize(40, 40);
+                webView.setStyle("-fx-background-color: lightgreen;" +
+                        "-fx-background-radius: 10 10 10 10");
+                spotImagesB.getChildren().add(webView);
+            } else {
+                spotifyA.getChildren().add(label);
+                WebView webView = new WebView();
+                webView.getEngine().load(GetSpotify.imagesList.get(counter));
+                webView.setMinSize(40, 40);
+                webView.setMaxSize(40, 40);
+                webView.setStyle("-fx-background-color: lightgreen;" +
+                        "-fx-background-radius: 10 10 10 10");
+                spotImagesA.getChildren().add(webView);
+            }
         }
     }
     private void redrawTasks() {

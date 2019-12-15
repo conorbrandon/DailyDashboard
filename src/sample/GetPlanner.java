@@ -14,7 +14,7 @@ public class GetPlanner {
     public static void main(String[] args) {
         tasksList = new PriorityQueue<>();
         tasksArrayList = new ArrayList<>();
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/tasks.txt");
+        File file = new File("src/sample/tasks.txt");
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {

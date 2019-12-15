@@ -68,7 +68,7 @@ public class GetRSS {
     }
 
     private static void loadFromFile() {
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/feeds.txt");
+        File file = new File("src/sample/feeds.txt");
         try {
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
@@ -80,7 +80,7 @@ public class GetRSS {
 
     }
     static void writeToFile() {
-        File file = new File("/Users/conorbrandon/IntelliJProjects/CSE260Project/src/sample/feeds.txt");
+        File file = new File("src/sample/feeds.txt");
         try {
             PrintWriter printWriter = new PrintWriter(file);
             for (int i = 0; i < feeds.size(); i++) {
