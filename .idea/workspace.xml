@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/httpcore_4_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spotify_web_api_java_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testing/GetHttpWorking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testing/GetListOfUsersPlaylistsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSE260Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CSE260Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/META-INF/CSE260Project.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/META-INF/CSE260Project.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetCalendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetSpotify.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetSpotify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetWeather.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/GetWeather.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/feeds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/feeds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/settings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE260Project/sample/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE260Project/sample/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GetCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GetCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GetPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GetPlanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GetRSS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GetRSS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GetSpotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GetSpotify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GetWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GetWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/feeds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/feeds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/settings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/tasks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +79,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -119,6 +94,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -309,6 +286,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -331,56 +309,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="second commit" />
     <option name="LAST_COMMIT_MESSAGE" value="second commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="673" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1575423961057">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="673" y="253" key="#com.intellij.ide.util.MemberChooser/41.23.1639.1027@41.23.1639.1027" timestamp="1575423961057" />
-    <state x="636" y="316" key="DetectedRootsChooserDialog" timestamp="1575300715988">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="636" y="316" key="DetectedRootsChooserDialog/41.23.1639.1027@41.23.1639.1027" timestamp="1575300715988" />
-    <state width="1597" height="302" key="GridCell.Tab.0.bottom" timestamp="1576426511580">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="302" key="GridCell.Tab.0.bottom/41.23.1639.1027@41.23.1639.1027" timestamp="1576426511580" />
-    <state width="1597" height="302" key="GridCell.Tab.0.center" timestamp="1576426511579">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="302" key="GridCell.Tab.0.center/41.23.1639.1027@41.23.1639.1027" timestamp="1576426511579" />
-    <state width="1597" height="302" key="GridCell.Tab.0.left" timestamp="1576426511578">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="302" key="GridCell.Tab.0.left/41.23.1639.1027@41.23.1639.1027" timestamp="1576426511578" />
-    <state width="1597" height="302" key="GridCell.Tab.0.right" timestamp="1576426511579">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="302" key="GridCell.Tab.0.right/41.23.1639.1027@41.23.1639.1027" timestamp="1576426511579" />
-    <state x="362" y="175" key="SettingsEditor" timestamp="1576369588482">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="362" y="175" key="SettingsEditor/41.23.1639.1027@41.23.1639.1027" timestamp="1576369588482" />
-    <state x="530" y="298" width="661" height="476" key="find.popup" timestamp="1575298557340">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="530" y="298" width="661" height="476" key="find.popup/41.23.1639.1027@41.23.1639.1027" timestamp="1575298557340" />
-    <state x="525" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1576426454080">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="525" y="250" width="670" height="676" key="search.everywhere.popup/41.23.1639.1027@41.23.1639.1027" timestamp="1576426454080" />
   </component>
 </project>
